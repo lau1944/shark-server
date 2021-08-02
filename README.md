@@ -2,7 +2,9 @@
 A shark framework server sample (see [client repo](https://github.com/lau1944/shark))
 
 Server run
-
+``` 
+npm install
+```
 ```
 npm start run
 ```
