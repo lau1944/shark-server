@@ -2,7 +2,7 @@ import express from "express";
 import { Widget } from './widget_json';
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.get("/first_page", (req, res) => {
     res.send(Widget.firsPage);
