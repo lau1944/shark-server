@@ -4,12 +4,12 @@ import { Widget } from './widget_json';
 const app = express();
 const port = 8080;
 
-app.get("/container", (req, res) => {
-    res.send(Widget.container);
+app.get("/first_page", (req, res) => {
+    res.send(Widget.firsPage);
 })
 
-app.get("/row", (req, res) => {
-    res.send(Widget.row);
+app.get("/second_page", (req, res) => {
+    res.send(Widget.secondPage);
 })
 
 app.get("/networkImage", (req, res) => {

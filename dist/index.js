@@ -7,11 +7,11 @@ var express_1 = __importDefault(require("express"));
 var widget_json_1 = require("./widget_json");
 var app = express_1.default();
 var port = 8080;
-app.get("/container", function (req, res) {
-    res.send(widget_json_1.Widget.container);
+app.get("/first_page", function (req, res) {
+    res.send(widget_json_1.Widget.firsPage);
 });
-app.get("/row", function (req, res) {
-    res.send(widget_json_1.Widget.row);
+app.get("/second_page", function (req, res) {
+    res.send(widget_json_1.Widget.secondPage);
 });
 app.get("/networkImage", function (req, res) {
     res.send(widget_json_1.Widget.networkImage);
