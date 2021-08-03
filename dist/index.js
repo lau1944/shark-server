@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var widget_json_1 = require("./widget_json");
 var app = express_1.default();
-var port = 8080;
+var port = process.env.PORT || 8080;
 app.get("/first_page", function (req, res) {
     res.send(widget_json_1.Widget.firsPage);
 });

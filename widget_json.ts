@@ -14,10 +14,20 @@ export class Widget {
                 "type": "RaisedButton",
                 "color": "#000000",
                 "textColor": "#FFFFFF",
-                "click_event": "route://second_page",
+                "click_event": "route://second_page?name=jimmy&age=12",
                 "child" : {
                   "type": "Text",
-                  "data": "To next page"
+                  "data": "Navigate To next page"
+                }
+              },
+              {
+                "type": "RaisedButton",
+                "color": "#000000",
+                "textColor": "#FFFFFF",
+                "click_event": "redirect://second_page?name=jimmy&age=12",
+                "child" : {
+                  "type": "Text",
+                  "data": "Redirect To next page"
                 }
               }
             ]
@@ -43,6 +53,16 @@ export class Widget {
                 "child" : {
                   "type": "Text",
                   "data": "To goog.gl"
+                }
+              },
+              {
+                "type": "RaisedButton",
+                "color": "#000000",
+                "textColor": "#FFFFFF",
+                "click_event": "pop://?name=jummy",
+                "child" : {
+                  "type": "Text",
+                  "data": "Pop"
                 }
               }
             ]
