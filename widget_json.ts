@@ -16,7 +16,7 @@ export class Widget {
                 "textColor": "#FFFFFF",
                 "click_event": "route://second_page?name=jimmy&age=12",
                 "child" : {
-                  "type": "Text",
+                  "type": "TranslatedText",
                   "data": "Navigate To next page"
                 }
               },
@@ -26,7 +26,7 @@ export class Widget {
                 "textColor": "#FFFFFF",
                 "click_event": "redirect://second_page?name=jimmy&age=12",
                 "child" : {
-                  "type": "Text",
+                  "type": "TranslatedText",
                   "data": "Redirect To next page"
                 }
               }
@@ -51,7 +51,7 @@ export class Widget {
                 "textColor": "#FFFFFF",
                 "click_event": "link://https://google.com",
                 "child" : {
-                  "type": "Text",
+                  "type": "TranslatedText",
                   "data": "To goog.gl"
                 }
               },
